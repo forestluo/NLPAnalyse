@@ -13,11 +13,17 @@
 # 参考链接
 
 我的NLP（自然语言处理）历程（1）: https://zhuanlan.zhihu.com/p/351497190
+
 我的NLP（自然语言处理）历程（2）: https://zhuanlan.zhihu.com/p/352620505
+
 我的NLP（自然语言处理）历程（3）: https://zhuanlan.zhihu.com/p/354062063
+
 我的NLP（自然语言处理）历程（4）: https://zhuanlan.zhihu.com/p/357198717
+
 我的NLP（自然语言处理）历程（5）: https://zhuanlan.zhihu.com/p/537757046
+
 我的NLP（自然语言处理）历程（6）: https://zhuanlan.zhihu.com/p/539030569
+
 我的NLP（自然语言处理）历程（7）: https://zhuanlan.zhihu.com/p/539068221
 
 ---
