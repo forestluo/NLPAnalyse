@@ -10,6 +10,8 @@
 
  该数据库为SQLServer 2019的数据备份。需要挂载到SQLServer 2019 Developers免费版本上恢复，才能使用。
 
+ 该项目对应一个WebApplication，可以在Repositories中找到。使用Aspx技术生成。
+
 # 参考链接
 
 我的NLP（自然语言处理）历程（1）: https://zhuanlan.zhihu.com/p/351497190
