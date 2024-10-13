@@ -1,0 +1,10 @@
+E:\SQLServerProjects\自然语言分析\RegExp\RegExp\obj\Debug\RegExp.Resources.resources
+E:\SQLServerProjects\自然语言分析\RegExp\RegExp\obj\Debug\RegExp.vbproj.GenerateResource.cache
+E:\SQLServerProjects\自然语言分析\RegExp\RegExp\obj\Debug\RegExp.vbproj.CoreCompileInputs.cache
+E:\SQLServerProjects\自然语言分析\RegExp\RegExp\bin\Debug\RegExp.dll
+E:\SQLServerProjects\自然语言分析\RegExp\RegExp\bin\Debug\RegExp.pdb
+E:\SQLServerProjects\自然语言分析\RegExp\RegExp\bin\Debug\RegExp.xml
+E:\SQLServerProjects\自然语言分析\RegExp\RegExp\obj\Debug\RegExp.dll
+E:\SQLServerProjects\自然语言分析\RegExp\RegExp\obj\Debug\RegExp.xml
+E:\SQLServerProjects\自然语言分析\RegExp\RegExp\obj\Debug\RegExp.pdb
+E:\SQLServerProjects\自然语言分析\RegExp\RegExp\obj\Debug\RegExp.vbprojAssemblyReference.cache

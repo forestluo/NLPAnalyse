@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="自然语言分析">
+  <Items>
+    <LogicalFolder Name="连接" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="MSITRIDENT3:nl">
+          <Created>2020-12-06T14:46:19.158748+08:00</Created>
+          <Type>SQL</Type>
+          <Server>MSITRIDENT3</Server>
+          <UserName>nl</UserName>
+          <Authentication>SQL</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - 查询</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="查询" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="AddCharacters.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>AddCharacters.sql</FullPath>
+        </FileNode>
+        <FileNode Name="AddGeneralRule.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>AddGeneralRule.sql</FullPath>
+        </FileNode>
+        <FileNode Name="AddInnerSentence.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>AddInnerSentence.sql</FullPath>
+        </FileNode>
+        <FileNode Name="AddOuterResult.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>AddOuterResult.sql</FullPath>
+        </FileNode>
+        <FileNode Name="AddParseRule.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>AddParseRule.sql</FullPath>
+        </FileNode>
+        <FileNode Name="AddOuterSentence.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>AddOuterSentence.sql</FullPath>
+        </FileNode>
+        <FileNode Name="AddSentenceRule.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>AddSentenceRule.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ClearParameters.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>ClearParameters.sql</FullPath>
+        </FileNode>
+        <FileNode Name="CutSentence.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>CutSentence.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetAttribute.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>GetAttribute.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetContent.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>GetContent.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetCount.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>GetCount.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetHash.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>GetHash.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetLength.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>GetLength.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetLowercase.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>GetLowercase.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetReduceRule.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>GetReduceRule.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetPairEnd.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>GetPairEnd.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetPriority.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>GetPriority.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetReducedResult.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>GetReducedResult.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetRuleID.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>GetRuleID.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetRuleLevel.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>GetRuleLevel.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetSentenceRule.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>GetSentenceRule.sql</FullPath>
+        </FileNode>
+        <FileNode Name="GetWordAttribute.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>GetWordAttribute.sql</FullPath>
+        </FileNode>
+        <FileNode Name="HasMajorSplitter.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>HasMajorSplitter.sql</FullPath>
+        </FileNode>
+        <FileNode Name="HasPairSplitter.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>HasPairSplitter.sql</FullPath>
+        </FileNode>
+        <FileNode Name="HasPunctuation.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>HasPunctuation.sql</FullPath>
+        </FileNode>
+        <FileNode Name="HTMLUnescape.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>HTMLUnescape.sql</FullPath>
+        </FileNode>
+        <FileNode Name="InnerExists.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>InnerExists.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IsMajorSplitter.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>IsMajorSplitter.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IsMinorSplitter.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>IsMinorSplitter.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IsPairEnd.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>IsPairEnd.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IsPairMatched.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>IsPairMatched.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IsPairSplitter.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>IsPairSplitter.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IsPairStart.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>IsPairStart.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IsParsable.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>IsParsable.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IsPunctuation.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>IsPunctuation.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IsTerminator.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>IsTerminator.sql</FullPath>
+        </FileNode>
+        <FileNode Name="LoadSentenceFile.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>LoadSentenceFile.sql</FullPath>
+        </FileNode>
+        <FileNode Name="LoadTextFile.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>LoadTextFile.sql</FullPath>
+        </FileNode>
+        <FileNode Name="LoadTextFiles.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>LoadTextFiles.sql</FullPath>
+        </FileNode>
+        <FileNode Name="LoadWordPool.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>LoadWordPool.sql</FullPath>
+        </FileNode>
+        <FileNode Name="OuterExists.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>OuterExists.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ParseContent.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>ParseContent.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ParseTextPool.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>ParseTextPool.sql</FullPath>
+        </FileNode>
+        <FileNode Name="创建表OuterContent.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>创建表OuterContent.sql</FullPath>
+        </FileNode>
+        <FileNode Name="创建表TextPool.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>创建表TextPool.sql</FullPath>
+        </FileNode>
+        <FileNode Name="重建WordRules.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>重建WordRules.sql</FullPath>
+        </FileNode>
+        <FileNode Name="RecoverParameters.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>RecoverParameters.sql</FullPath>
+        </FileNode>
+        <FileNode Name="RuleExists.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>RuleExists.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SetVocabulary.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>SetVocabulary.sql</FullPath>
+        </FileNode>
+        <FileNode Name="UChar.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>UChar.sql</FullPath>
+        </FileNode>
+        <FileNode Name="UString.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>UString.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VerifyContentRule.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>VerifyContentRule.sql</FullPath>
+        </FileNode>
+        <FileNode Name="XMLConvertRule.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>XMLConvertRule.sql</FullPath>
+        </FileNode>
+        <FileNode Name="XMLCutSentence.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>XMLCutSentence.sql</FullPath>
+        </FileNode>
+        <FileNode Name="XMLEscape.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>XMLEscape.sql</FullPath>
+        </FileNode>
+        <FileNode Name="XMLGetWordRule.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>XMLGetWordRule.sql</FullPath>
+        </FileNode>
+        <FileNode Name="XMLParseContent.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>XMLParseContent.sql</FullPath>
+        </FileNode>
+        <FileNode Name="XMLParseSentence.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>XMLParseSentence.sql</FullPath>
+        </FileNode>
+        <FileNode Name="XMLReadContent.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>XMLReadContent.sql</FullPath>
+        </FileNode>
+        <FileNode Name="XMLUnescape.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>XMLUnescape.sql</FullPath>
+        </FileNode>
+        <FileNode Name="创建表InnerContent.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>创建表InnerContent.sql</FullPath>
+        </FileNode>
+        <FileNode Name="创建表ParseRule.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSITRIDENT3:False:nl</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSITRIDENT3</AssociatedConnSrvName>
+          <AssociatedConnUserName>nl</AssociatedConnUserName>
+          <FullPath>创建表ParseRule.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="杂项" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>

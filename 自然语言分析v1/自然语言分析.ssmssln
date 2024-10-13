@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 18.00
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "自然语言分析", "自然语言分析\自然语言分析.ssmssqlproj", "{7D5AAED8-4424-4245-845E-5B99F46A23F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D5AAED8-4424-4245-845E-5B99F46A23F5}.Default|Default.ActiveCfg = Default
+		{112646F7-813B-450C-90DE-2B0DF8819C1C}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {779D025F-F5FB-426F-A124-ECCAB44DEEA1}
+	EndGlobalSection
+EndGlobal

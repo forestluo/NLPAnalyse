@@ -1,0 +1,33 @@
+CREATE FUNCTION f_Convert(
+  @str  NVARCHAR(4000), --要转换的字符串 
+  @flag BIT         --转换标志,0转换成半角,1转换成全角 
+)
+  RETURNS NVARCHAR(4000)
+AS
+  BEGIN
+    DECLARE
+    @pat NVARCHAR(8),
+    @step INT, 
+    @i INT, 
+    @spc INT
+    
+    IF @flag = 0
+      SELECT
+        @pat = N'%[！-～]%',    --全角的通配符
+        @step = -65248,
+        @str = REPLACE(@str, N'　 ', N'   ')
+    ELSE
+      SELECT
+        @pat = N'%[!-~]%',      --半角的通配符
+        @step = 65248,
+        @str = REPLACE(@str, N'   ', N'　 ')
+    --指定排序规则
+    SET @i = PATINDEX(@pat collate LATIN1_GENERAL_BIN, @str)
+    WHILE @i > 0
+      SELECT
+        @str = REPLACE(@str,
+                       SUBSTRING(@str, @i, 1),
+                       NCHAR(UNICODE(SUBSTRING(@str, @i, 1)) + @step)),
+        @i = PATINDEX(@pat collate LATIN1_GENERAL_BIN, @str)
+    RETURN (@str)
+  END 

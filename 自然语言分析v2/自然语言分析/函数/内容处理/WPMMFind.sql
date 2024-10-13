@@ -1,0 +1,84 @@
+USE [nldb]
+GO
+
+/****** Object:  UserDefinedFunction [dbo].[WPMMFind]    Script Date: 2021/1/31 10:53:37 ******/
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		<罗堃>
+-- Create date: <2021年1月31日>
+-- Description:	<使用窗口最大匹配搜索>
+-- =============================================
+
+CREATE OR ALTER FUNCTION [dbo].[WPMMFind]
+(
+	-- Add the parameters for the function here
+	@SqlPosition INT,
+	@SqlWidth INT,
+	@SqlDictionary INT,
+	@SqlContent UString
+)
+RETURNS XML
+AS
+BEGIN
+
+	-- 声明临时变量
+	DECLARE @SqlCID INT;
+	DECLARE @SqlLeft INT;
+
+	DECLARE @SqlStart INT;
+	DECLARE @SqlValue UString;
+
+	-- 剪裁
+	SET @SqlContent = TRIM(@SqlContent);
+	-- 检查参数
+	IF @SqlContent IS NULL
+		RETURN CONVERT(XML, '<result id="-1">input is null</result>');
+	-- 检查终结符号
+	-- 包括空，单字
+	-- 终结符拒绝进一步分割
+	IF LEN(@SqlContent) < @SqlWidth OR @SqlWidth <= 1
+		RETURN CONVERT(XML, '<result id="-2">it is a terminator</result>');
+
+	-- 获得左侧位置
+	SET @SqlLeft =
+		@SqlPosition - @SqlWidth + 1;
+	IF @SqlLeft < 1 SET @SqlLeft = 1;
+
+	-- 设置初始值
+	SET @SqlCID = 0;
+	SET @SqlStart = @SqlLeft - 1;
+	-- 循环处理
+	WHILE @SqlStart < @SqlPosition AND
+		@SqlStart + @SqlWidth <= LEN(@SqlContent)
+	BEGIN
+		-- 设置计数器
+		SET @SqlStart = @SqlStart + 1;
+		-- 获得内容
+		SET @SqlValue = SUBSTRING(@SqlContent, @SqlStart, @SqlWidth);
+
+		-- 设置初始值
+		SET @SqlCID = dbo.ContentGetCID(@SqlValue);
+		-- 没有找到该内容则继续寻找下一个
+		IF @SqlCID > 0 BREAK;
+		ELSE
+		BEGIN
+			-- 是否依赖字典
+			IF @SqlDictionary = 0 CONTINUE;
+			-- 查询字典
+			IF dbo.LookupDictionary(@SqlValue) IS NOT NULL BEGIN SET @SqlCID = 1; BREAK; END
+		END
+	END
+	-- 检查结果
+	-- 存在有无法识别的内容
+	IF @SqlCID <= 0
+		RETURN CONVERT(XML, '<result id="-3">something unrecognized</result>');
+	-- 搜索成功
+	RETURN CONVERT(XML, '<result id="1" met="WPMM" pos="' + CONVERT(NVARCHAR(MAX), @SqlStart) + '">' + @SqlValue + '</result>');
+END
+GO

@@ -1,0 +1,94 @@
+USE [nldb]
+GO
+
+/****** Object:  UserDefinedFunction [dbo].[GetMatchedRule]    Script Date: 2020/12/7 9:56:14 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		<罗堃>
+-- Create date: <2020年12月7日>
+-- Description:	<获得可以匹配的化简规则>
+-- =============================================
+CREATE OR ALTER FUNCTION [dbo].[GetReduceRule]
+(
+	-- Add the parameters for the function here
+	@SqlRule UString
+)
+RETURNS UString
+AS
+BEGIN
+	-- 声明临时变量
+	DECLARE @SqlRID INT;
+	DECLARE @SqlIndex INT;
+	DECLARE @SqlCount INT;
+	DECLARE @SqlMatched INT;
+
+	DECLARE @SqlCRule UString;
+	DECLARE @SqlReduce UString;
+	DECLARE @SqlCReduce UString;
+
+	DECLARE @SqlClassification UString;
+
+	-- 检查参数
+	IF @SqlRule IS NULL
+		OR LEN(@SqlRule) <= 0 RETURN NULL;
+	-- 清理参数名
+	SET @SqlCRule =
+		dbo.ClearParameters(@SqlRule);
+
+	-- 设置初始值
+	SET @SqlMatched = 0;
+	-- 获得参数个数
+	SET @SqlCount = dbo.GetVarCount(@SqlCRule);
+
+	-- 声明游标
+	DECLARE SqlCursor CURSOR
+		STATIC FORWARD_ONLY LOCAL FOR
+		SELECT rid, parse_rule, classification
+		FROM dbo.ParseRule
+		WHERE hash_value <> dbo.GetHash(@SqlRule) AND
+		parameter_count <= @SqlCount AND classification IN ('拼接', '配对', '单句', '通用', '复句')
+		ORDER BY dbo.GetParseRuleLevel(classification),
+		minimum_length DESC, static_suffix DESC, static_prefix DESC, parameter_count DESC, controllable_priority DESC;
+	-- 打开游标
+	OPEN SqlCursor;
+	-- 取第一条记录
+	FETCH NEXT FROM SqlCursor INTO @SqlRID, @SqlReduce, @SqlClassification;
+	-- 循环处理游标
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		-- 检查参数
+		IF @SqlReduce IS NOT NULL
+			AND LEN(@SqlReduce) > 0
+		BEGIN
+			-- 清理参数名
+			SET @SqlCReduce =
+				dbo.ClearParameters(@SqlReduce); 
+			-- 检查是否可以匹配
+			SET @SqlIndex = CHARINDEX(@SqlCReduce, @SqlCRule);
+			-- 检查结果
+			IF @SqlIndex >= 1
+			BEGIN
+				-- 检查类别
+				-- 单句必须从内容头部开始匹配
+				IF @SqlClassification = '单句'
+					AND @SqlIndex <> 1 GOTO NEXT_ROW; SET @SqlMatched = 1; BREAK;
+			END
+		END
+NEXT_ROW:
+		-- 取下一条记录
+		FETCH NEXT FROM SqlCursor INTO @SqlRID, @SqlReduce, @SqlClassification;
+	END
+	-- 关闭游标
+	CLOSE SqlCursor;
+	-- 释放游标
+	DEALLOCATE SqlCursor;
+	-- 返回结果
+	RETURN CASE @SqlMatched WHEN 1 THEN @SqlReduce ELSE NULL END;
+	-- RETURN @SqlReduce;
+END
+GO
